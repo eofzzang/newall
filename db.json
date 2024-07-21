@@ -72,7 +72,7 @@
           "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
           "price": 8900,
           "reviewPoint": 5.0,
-          "soldOut": false,
+          "soldOut": true,
           "isNew": false
         },
         {
@@ -94,7 +94,7 @@
           "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
           "price": 7900,
           "reviewPoint": 3.0,
-          "soldOut": true,
+          "soldOut": false,
           "isNew": false
         },
         {
@@ -105,7 +105,7 @@
           "description": "토메이로와 치즈를 듬뿍 넣은 피자",
           "price": 9900,
           "reviewPoint": 4.5,
-          "soldOut": false,
+          "soldOut": true,
           "isNew": false
         }
       ]
@@ -124,7 +124,7 @@
           "price": 8900,
           "reviewPoint": 5.0,
           "soldOut": false,
-          "isNew": false
+          "isNew": true
         },
         {
           "id": 4,
@@ -134,8 +134,8 @@
           "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
           "price": 12000,
           "reviewPoint": 4.8,
-          "soldOut": false,
-          "isNew": true
+          "soldOut": true,
+          "isNew": false
         },
         {
           "id": 6,
@@ -145,7 +145,7 @@
           "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
           "price": 7900,
           "reviewPoint": 3.0,
-          "soldOut": true,
+          "soldOut": false,
           "isNew": false
         },
         {
@@ -196,7 +196,7 @@
           "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
           "price": 7900,
           "reviewPoint": 3.0,
-          "soldOut": true,
+          "soldOut": false,
           "isNew": false
         },
         {

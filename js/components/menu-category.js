@@ -21,7 +21,7 @@ Vue.component('menu-category', {
           <button class="btn-toggle"><img class="ico-arrow" src="./assets/images/ico-arrow.svg" alt=""></button>
         </div>
         <ul class="menu-list">
-          <li class="menu-item" v-for="item in group.items" @click="redirectDetailPage(item.id)">
+          <li class="menu-item" v-for="item in group.items" @click="redirectDetailPage(item)">
             <a class="menu-detail">
               <div class="menu-img-area">
                 <img :src="item.imgUrl" :alt="item.name" class="menu-img" width="100" height="110">
@@ -76,8 +76,12 @@ Vue.component('menu-category', {
     toggle(group) {
       group.isClosed = !group.isClosed;
     },
-    redirectDetailPage(id) {
-      history.pushState(null, null, '/detail/'+id);
+    redirectDetailPage(item) {
+      if (item.soldOut) {
+        alert('품절입니다.');
+        return;
+      }
+      history.pushState(null, null, '/detail/'+item.id);
       dispatchEvent(new PopStateEvent('popstate'));
     }
   }
