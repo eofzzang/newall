@@ -18,7 +18,7 @@ Vue.component('order-info-area', {
 
           <!-- 주문분류 -->
           <div class="tab-switch-box" role="tablist">
-            <a v-for="item, idx in tabList2" href="#" @click="onClickTabList2(idx)"
+            <a v-for="item, idx in tabList2" @click="onClickTabList2(idx)"
               class="tab-switch" :class="{'is-active':tabIndex2 == idx}" role="tab">
               <span v-html="item.text"></span><img :src="item.imgUrl" alt="" class="ico-check" :aria-hidden="tabIndex2 == idx">
             </a>
@@ -51,7 +51,7 @@ Vue.component('order-info-area', {
                     <p class="menu-name">{{item.name}}</p>
                     <p class="menu-price">{{item.price.toLocaleString('ko-KR')}}원</p>
                   <!-- </a> -->
-                  <a href="#" class="badge-cart">
+                  <a class="badge-cart">
                     <img src="./assets/images/ico-cart.svg" alt="" class="ico-cart">
                   </a>
                 </li>

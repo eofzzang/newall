@@ -10,7 +10,7 @@ Vue.component('detail-review', {
           <div class="scroll-x">
             <ul class="orderer-pic-list">
               <li class="orderer-pic-item" v-for="i in review.pictures.length">
-                <a href="" class="orderer-pic-link">
+                <a class="orderer-pic-link">
                   <img src="https://via.placeholder.com/104/fff/000" alt="">
                 </a>
               </li>

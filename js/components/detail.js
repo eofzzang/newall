@@ -39,9 +39,9 @@ Vue.component('detail-area', {
                 주문
               </div>
               <div class="tab-switch-box" role="tablist">
-                <a href="#" class="tab-switch" :class="{'is-active':orderType == 0}" 
+                <a class="tab-switch" :class="{'is-active':orderType == 0}" 
                   @click="() => orderType = 0" role="tab">🛍&nbsp;&nbsp;포장</a>
-                <a href="#" class="tab-switch" :class="{'is-active':orderType == 1}" 
+                <a class="tab-switch" :class="{'is-active':orderType == 1}" 
                   @click="() => orderType = 1" role="tab">🍽&nbsp;&nbsp;매장</a>
               </div>
             </div>
