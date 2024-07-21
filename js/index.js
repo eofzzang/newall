@@ -52,7 +52,7 @@ var app = new Vue({
 })
 
 window.onpopstate = () => {
-  const [, page] = location.pathname.split('/');
+  let [, page] = location.pathname.split('/');
   if (page == 'newall') page = 'index.html'
   app.pageName = page;
 };
