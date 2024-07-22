@@ -13,62 +13,6 @@
       "destination": "DOKYO",
       "gate": "29",
       "time": "15:00"
-    },
-    {
-      "id": 3,
-      "flight": "FP428",
-      "destination": "LONDON",
-      "gate": "7",
-      "time": "13:40"
-    },
-    {
-      "id": 4,
-      "flight": "QM232",
-      "destination": "MILANO",
-      "gate": "9",
-      "time": "23:30"
-    },
-    {
-      "id": 5,
-      "flight": "CN508",
-      "destination": "BERLIN",
-      "gate": "39",
-      "time": "16:50"
-    },
-    {
-      "id": 6,
-      "flight": "AZ412",
-      "destination": "BANGKOK",
-      "gate": "24",
-      "time": "13:50"
-    },
-    {
-      "id": 7,
-      "flight": "JK488",
-      "destination": "SEOUL",
-      "gate": "77",
-      "time": "08:42"
-    },
-    {
-      "id": 8,
-      "flight": "YI290",
-      "destination": "MANILA",
-      "gate": "42",
-      "time": "16:25"
-    },
-    {
-      "id": 9,
-      "flight": "LB221",
-      "destination": "BARCELONA",
-      "gate": "22",
-      "time": "20:40"
-    },
-    {
-      "id": 10,
-      "flight": "US283",
-      "destination": "CHICAGO",
-      "gate": "11",
-      "time": "23:00"
     }
   ],
   "2": [
@@ -106,41 +50,6 @@
       "destination": "NEWYORK",
       "gate": "10",
       "time": "11:30"
-    },
-    {
-      "id": 6,
-      "flight": "AF242",
-      "destination": "CANCUN",
-      "gate": "30",
-      "time": "14:00"
-    },
-    {
-      "id": 7,
-      "flight": "TH877",
-      "destination": "ROMA",
-      "gate": "21",
-      "time": "16:22"
-    },
-    {
-      "id": 8,
-      "flight": "GA080",
-      "destination": "VIENNA",
-      "gate": "4",
-      "time": "04:50"
-    },
-    {
-      "id": 9,
-      "flight": "IO432",
-      "destination": "LASVEGAS",
-      "gate": "32",
-      "time": "12:10"
-    },
-    {
-      "id": 10,
-      "flight": "UV343",
-      "destination": "OSAKA",
-      "gate": "15",
-      "time": "18:00"
     }
   ],
   "3": [
@@ -171,48 +80,6 @@
       "destination": "SYDNEY",
       "gate": "61",
       "time": "21:35"
-    },
-    {
-      "id": 5,
-      "flight": "FH333",
-      "destination": "BUENOSAIRES",
-      "gate": "31",
-      "time": "15:30"
-    },
-    {
-      "id": 6,
-      "flight": "NB545",
-      "destination": "STOCKHOLM",
-      "gate": "7",
-      "time": "04:20"
-    },
-    {
-      "id": 7,
-      "flight": "OP252",
-      "destination": "NEWCASTLE",
-      "gate": "42",
-      "time": "12:35"
-    },
-    {
-      "id": 8,
-      "flight": "BC956",
-      "destination": "DUBAI",
-      "gate": "20",
-      "time": "01:30"
-    },
-    {
-      "id": 9,
-      "flight": "TQ335",
-      "destination": "ABUDHABI",
-      "gate": "68",
-      "time": "15:30"
-    },
-    {
-      "id": 10,
-      "flight": "AD715",
-      "destination": "BERN",
-      "gate": "58",
-      "time": "14:00"
     }
   ]
 }
