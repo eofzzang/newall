@@ -4,7 +4,7 @@ Vue.component('header-area', {
       <div class="place-header" role="banner">
         <h1 class="title">
           <a class="link-back">
-            <img src="./assets/images/ico-back.svg" alt="뒤로가기">
+            <img src="/newall/assets/images/ico-back.svg" alt="뒤로가기">
           </a>
           덮스 포트폴리오점
         </h1>

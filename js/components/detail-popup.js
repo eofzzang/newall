@@ -29,7 +29,7 @@ Vue.component('detail-popup', {
               </div>
             </div>
             <button class="btn-close" @click="onClickClose">
-              <img src="./assets/images/ico-close.svg" alt="" class="ico-close">
+              <img src="/newall/assets/images/ico-close.svg" alt="" class="ico-close">
             </button>
           </div>
         </div>
