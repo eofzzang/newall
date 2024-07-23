@@ -19,7 +19,7 @@ Vue.component('detail-area', {
 
           <div class="menu-info-group">
             <span class="menu-price">{{menu.price.toLocaleString('ko-KR')}}원</span>
-            <span class="menu-grade"><img src="newall/assets/images/ico-star.svg" 
+            <span class="menu-grade"><img src="/newall/assets/images/ico-star.svg" 
               class="ico-star" alt="">{{menu.reviewPoint}}</span>
             <span class="menu-number-of-order">주문수<em>{{menu.orderCount}}</em></span>
           </div>
