@@ -269,7 +269,7 @@ Vue.component('order',{
       return false;
     },
     modalClose() {
-      history.pushState(null, null, '/index.html');
+      history.pushState(null, null, 'newall/index.html');
       dispatchEvent(new PopStateEvent('popstate'));
     }
   }
