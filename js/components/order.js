@@ -269,8 +269,9 @@ Vue.component('order',{
       return false;
     },
     modalClose() {
-      history.pushState(null, null, 'newall/index.html');
-      dispatchEvent(new PopStateEvent('popstate'));
+      window.location.replace('https://newall.shop/index.html');
+      // history.pushState(null, null, 'newall/index.html');
+      // dispatchEvent(new PopStateEvent('popstate'));
     }
   }
 })
