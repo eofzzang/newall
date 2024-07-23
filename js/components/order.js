@@ -1,4 +1,4 @@
-import { fetchGetAgreementList } from './api/index.js'
+import { fetchGetAgreementList } from '../api/index.js'
 
 Vue.component('order',{
   template:`
