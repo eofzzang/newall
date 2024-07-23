@@ -63,7 +63,7 @@ Vue.component('detail-area', {
   `,
   mounted() {
     const [menuId] = window.location.pathname.split('/').splice(-1);
-    fetchGetMenu(menuId).then((response) => this.menu = response[0]);
+    fetchGetMenu(menuId).then((response) => this.menu = response);
   },
   props: {
     orderType: Number

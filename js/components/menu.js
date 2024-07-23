@@ -1,4 +1,4 @@
-import { fetchGetRecentOrders } from '../api/index.js'
+import { fetchGetMenuItems, fetchGetRecentOrders } from '../api/index.js'
 
 Vue.component('order-info-area', {
   template: `
@@ -63,7 +63,15 @@ Vue.component('order-info-area', {
     </div>
   `,
   mounted() {
-    fetchGetRecentOrders().then((response) => this.recentMenuItems = response);
+    fetchGetMenuItems().then(function (res) {
+      this.menu = res;
+
+      fetchGetRecentOrders().then(function (response) {
+        this.recentMenuId = response;
+        this.recentMenuItems = this.menu.filter(x=> this.recentMenuId.id.includes(x.id) );
+      }.bind(this));
+      
+    }.bind(this));
   },
   data() {
     return {
@@ -78,6 +86,8 @@ Vue.component('order-info-area', {
         '매장에서 드실수 있게 만들어 드립니다.',
         '배달주문이 가능한 매장입니다.',
       ],
+      menu: [],
+      recentMenuId: [],
       recentMenuItems: [],
     }
   },

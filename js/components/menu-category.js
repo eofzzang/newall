@@ -1,4 +1,4 @@
-import { fetchGetGroupList } from '../api/index.js'
+import { fetchGetMenuItems, fetchGetGroupList } from '../api/index.js'
 
 Vue.component('menu-category', {
   template:`
@@ -53,10 +53,25 @@ Vue.component('menu-category', {
   </div>
   `,
   mounted() {
-    fetchGetGroupList().then((response) => this.groupItems = response);
+    fetchGetMenuItems().then(function (res) {
+      this.menu = res;
+
+      fetchGetGroupList().then(function (response) {
+        this.groupIds = response;
+        this.groupIds.forEach(function(x) {
+          x.items.forEach(function(val,i) {
+            x.items[i] = this.menu.find(x=> x.id == val);
+          }.bind(this))
+        }.bind(this))
+        this.groupItems = this.groupIds;
+      }.bind(this));
+
+    }.bind(this));
   },
   data() {
     return {
+      menu: [],
+      groupIds: [],
       groupItems: [],
       category: 'recommends',
     }
