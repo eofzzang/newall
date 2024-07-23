@@ -1,31 +1,514 @@
 {
-  "posts": [
+  "recent-orders":[
+    {"id":4, "name":"연어 스테이크", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":12000},
+    {"id":1, "name":"돈까스 덮밥", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":8900},
+    {"id":7, "name":"토마토 피자", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":9900},
+    {"id":4, "name":"연어 스테이크", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":12000},
+    {"id":6, "name":"함박 샌드", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":7900},
+    {"id":7, "name":"토마토 피자", "imgUrl":"assets/images/ico-check.svg", "isPopular":false, "price":9900}
+  ],
+  "menu-groups": [
     {
-      "id": 1,
-      "title": "Post 1"
+      "category": "recommends",
+      "categoryName": "추천",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": true,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": false,
+          "isNew": false
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "Post 2"
+      "category": "signature",
+      "categoryName": "시그니처 메뉴",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": true,
+          "isNew": false
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": true,
+          "isNew": false
+        }
+      ]
     },
     {
-      "id": 3,
-      "title": "Post 3"
+      "category": "warmbowl",
+      "categoryName": "웜볼",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": true,
+          "isNew": false
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": false,
+          "isNew": false
+        }
+      ]
+    },
+    {
+      "category": "sandwitch",
+      "categoryName": "샌드위치",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": false,
+          "isNew": false
+        }
+      ]
+    },
+    {
+      "category": "salard",
+      "categoryName": "샐러드",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": true,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": false,
+          "isNew": false
+        }
+      ]
+    },
+    {
+      "category": "source",
+      "categoryName": "소스",
+      "isClosed": true,
+      "items": [
+        {
+          "id": 1,
+          "name": "돈까스 덮밥",
+          "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+          "orderCount": 11,
+          "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+          "price": 8900,
+          "reviewPoint": 5.0,
+          "soldOut": false,
+          "isNew": false
+        },
+        {
+          "id": 4,
+          "name": "연어 스테이크",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+          "orderCount": 23,
+          "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+          "price": 12000,
+          "reviewPoint": 4.8,
+          "soldOut": false,
+          "isNew": true
+        },
+        {
+          "id": 6,
+          "name": "함박 샌드",
+          "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+          "orderCount": 50,
+          "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+          "price": 7900,
+          "reviewPoint": 3.0,
+          "soldOut": true,
+          "isNew": false
+        },
+        {
+          "id": 7,
+          "name": "토마토 피자",
+          "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+          "orderCount": 79,
+          "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+          "price": 9900,
+          "reviewPoint": 4.5,
+          "soldOut": false,
+          "isNew": false
+        }
+      ]
     }
   ],
-  "comments": [
+  "menu": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "돈까스 덮밥",
+      "imgUrl": "https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542_1280.jpg",
+      "orderCount": 11,
+      "description": "돈까스, 파, 마요네즈, 시치미를 뿌린 덮밥",
+      "price": 8900,
+      "reviewPoint": 5.0,
+      "pictures":[1,5,2],
+      "baseList":[
+        "추천대로","채소볼","곡물볼"
+      ],
+      "toppingList":[
+        {"name":"채소추가(30% 추가)", "price":900},
+        {"name":"치즈추가", "price":900},
+        {"name":"곡물추가(30% 추가)", "price":900}
+      ],
+      "optionList":[
+        {"name":"치킨","price":1500,"stock":6},
+        {"name":"에그","price":900,"stock":2},
+        {"name":"소시지","price":1800,"stock":3},
+        {"name":"치즈","price":500,"stock":0},
+        {"name":"콘","price":1000,"stock":11}
+      ],
+      "reviews":[
+        {
+          "reviewrId": "zero***",
+          "reviewPoint": 4.5,
+          "content": "신선한 야채가 좋아요",
+          "orderDate": "2021. 10. 8"
+        },
+        {
+          "reviewrId": "kdi***",
+          "reviewPoint": 3.5,
+          "content": "신선한 과일이 좋아요",
+          "orderDate": "2021. 11. 18"
+        },
+        {
+          "reviewrId": "asdf***",
+          "reviewPoint": 2.5,
+          "content": "신선한 밥이 좋아요",
+          "orderDate": "2021. 12. 8"
+        }
+      ]
     },
     {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
+      "id": 4,
+      "name": "연어 스테이크",
+      "imgUrl": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+      "orderCount": 23,
+      "description": "가니쉬를 곁들인 부드럽고 꼬수운 여너 스테이크",
+      "price": 12000,
+      "reviewPoint": 4.8,
+      "pictures":[1,1,1,1,2],
+      "baseList":[
+        "레어","미디움","웰던"
+      ],
+      "toppingList":[
+        {"name":"가니쉬추가(30% 추가)", "price":1900},
+        {"name":"치즈추가", "price":900}
+      ],
+      "optionList":[
+        {"name":"치즈","price":500,"stock":3},
+        {"name":"콘","price":1000,"stock":11}
+      ],
+      "reviews":[
+        {
+          "reviewrId": "zero***",
+          "reviewPoint": 4.5,
+          "content": "신선한 야채가 좋아요",
+          "orderDate": "2021. 10. 8"
+        },
+        {
+          "reviewrId": "kdi***",
+          "reviewPoint": 3.5,
+          "content": "Lorem ipsum dolor sit amet consectetur, adipisicingelit. Nobis repellat nihil enim doloremque!",
+          "orderDate": "2021. 11. 18"
+        },
+        {
+          "reviewrId": "1231***",
+          "reviewPoint": 4.9,
+          "content": "신선한 고기가 좋아요",
+          "orderDate": "2022. 1. 8"
+        },
+        {
+          "reviewrId": "대한***",
+          "reviewPoint": 3.5,
+          "content": "신선한 대한이 좋아요",
+          "orderDate": "2023. 11. 1"
+        },
+        {
+          "reviewrId": "asdf***",
+          "reviewPoint": 2.5,
+          "content": "신선한 밥이 좋아요",
+          "orderDate": "2024. 12. 8"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "함박 샌드",
+      "imgUrl": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+      "orderCount": 50,
+      "description": "양파, 양배추, 토메이로, 피클, 함박스테이크를 넣은 맛조은 소주~",
+      "price": 7900,
+      "reviewPoint": 3.0,
+      "pictures":[1,2],
+      "baseList":[
+        "소이소스","스파이시소스","반반"
+      ],
+      "toppingList":[
+        {"name":"양파추가", "price":700},
+        {"name":"양배추추가", "price":900},
+        {"name":"토메이로추가", "price":800},
+        {"name":"피클추가", "price":400},
+        {"name":"함박스테이크추가", "price":4900}
+      ],
+      "optionList":[
+        {"name":"치킨","price":1500,"stock":6},
+        {"name":"에그","price":900,"stock":2},
+        {"name":"소시지","price":1800,"stock":3},
+        {"name":"치즈","price":500,"stock":0},
+        {"name":"콘","price":1000,"stock":11}
+      ],
+      "reviews":[
+        {
+          "reviewrId": "zero***",
+          "reviewPoint": 4.5,
+          "content": "신선한 야채가 좋아요",
+          "orderDate": "2021. 10. 8"
+        },
+        {
+          "reviewrId": "asdf***",
+          "reviewPoint": 2.5,
+          "content": "신선한 밥이 좋아요",
+          "orderDate": "2021. 12. 8"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "맛좋은 피자",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+      "orderCount": 79,
+      "description": "토메이로와 치즈를 듬뿍 넣은 피자",
+      "price": 9900,
+      "reviewPoint": 4.5,
+      "pictures":[1,2,3,4,5,6,7,8],
+      "baseList":[
+        "치즈피자","하와이안피자","스테이크피자","머쉬룸피자","인상피자"
+      ],
+      "toppingList":[
+        {"name":"채소추가(30% 추가)", "price":900},
+        {"name":"치즈추가", "price":900},
+        {"name":"곡물추가(30% 추가)", "price":900}
+      ],
+      "optionList":[
+        {"name":"치킨","price":1500,"stock":6},
+        {"name":"올리브","price":700,"stock":232},
+        {"name":"갈릭","price":1500,"stock":532},
+        {"name":"에그","price":900,"stock":2},
+        {"name":"소시지","price":1800,"stock":3},
+        {"name":"치즈","price":500,"stock":0},
+        {"name":"콘","price":1000,"stock":11}
+      ],
+      "reviews":[
+        {
+          "reviewrId": "zero***",
+          "reviewPoint": 4.5,
+          "content": "신선한 야채가 좋아요",
+          "orderDate": "2021. 10. 8"
+        },
+        {
+          "reviewrId": "kdi***",
+          "reviewPoint": 3.5,
+          "content": "신선한 과일이 좋아요",
+          "orderDate": "2021. 11. 18"
+        }
+      ]
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "agreement-list": [
+    {
+      "title":"개인정보 수집 동의", 
+      "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nesciunt unde, recusandae ipsum eos quasi velit natus repellendus veritatis dicta a quia eaque, suscipit voluptatem sit illo distinctio neque. Eum!<br><br>, dolor sit amet consectetur adipisicing elit. Voluptas itaque, asperiores soluta, natus cum eligendi quis iste saepe, autem magnam impedit rerum facilis optio. Quasi officia incidunt est sed voluptatem.<br><br>"
+    },
+    {
+      "title":"개인정보 제공 동의", 
+      "content":"주문 서비스 이용을 위한 개인정보 수집 및 제3자 제공,<br> 취소/환불 규정을 확인하였으며 이에 동의한다고 해야한다는 말이 있다는"
+    },
+    {
+      "title":"주문취소 및 환불 유의사항", 
+      "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nesciunt unde, recusandae ipsum eos quasi velit natus repellendus veritatis dicta a quia eaque, suscipit voluptatem sit illo distinctio neque. Eum!<br><br>, dolor sit amet consectetur adipisicing elit. Voluptas itaque, asperiores soluta, natus cum eligendi quis iste saepe, autem magnam impedit rerum facilis optio. Quasi officia incidunt est sed voluptatem.<br><br>"
+    }
+  ]
 }
