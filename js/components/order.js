@@ -216,7 +216,8 @@ Vue.component('order',{
   props: ['item'],
   computed: {
     totalPrice() {
-      return (this.info.price * this.info.amount) + this.info.amount == 0 ? 0 : this.info.extraPrice;
+      let total = this.info.amount == 0 ? 0 : this.info.extraPrice;
+      return this.info.price * this.info.amount + total;
     }
   },
   mounted() {
