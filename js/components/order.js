@@ -1,4 +1,4 @@
-import { fetchGetAgreementList } from '../api/index.js'
+import { fetchGetAgreementList } from './api/index.js'
 
 Vue.component('order',{
   template:`
@@ -8,7 +8,7 @@ Vue.component('order',{
        <div class="page-title-area">
         <p class="title">주문서</p>
         <button class="btn-close">
-          <img src="../assets/images/ico-close-white.svg" alt="닫기" class="ico-close">
+          <img src="./assets/images/ico-close-white.svg" alt="닫기" class="ico-close">
         </button>
        </div>
       <!-- //주문서 타이틀 -->
@@ -31,7 +31,7 @@ Vue.component('order',{
           <div class="order-content-body">
             <!-- 담은 메뉴 없음 -->
             <div class="no-order hidden">
-              <img src="../assets/images/ico-exclaim.svg" alt="" aria-hidden="true">
+              <img src="./assets/images/ico-exclaim.svg" alt="" aria-hidden="true">
               <p class="txt">담은 메뉴가 없습니다.</p>
             </div>
             <!-- // 담은 메뉴 없음 -->
@@ -59,7 +59,7 @@ Vue.component('order',{
                   </div>
                 </div>
                 <button class="btn-delete">
-                  <img src="../assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                  <img src="./assets/images/ico-close.svg" alt="삭제" class="ico-delete">
                 </button>
               </li>
               
@@ -83,7 +83,7 @@ Vue.component('order',{
                   </div>
                 </div>
                 <button class="btn-delete">
-                  <img src="../assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                  <img src="./assets/images/ico-close.svg" alt="삭제" class="ico-delete">
                 </button>
               </li> -->
             </ul>
@@ -150,7 +150,7 @@ Vue.component('order',{
                 <div class="agreement-title">
                   <span class="txt">{{agreeItem.title}}</span>
                   <button class="btn-toggle">
-                    <img src="../assets/images/ico-arrow-gray.svg" alt="">
+                    <img src="./assets/images/ico-arrow-gray.svg" alt="">
                   </button>
                 </div>
                 <div class="agreement-content">
