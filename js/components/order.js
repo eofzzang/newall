@@ -188,7 +188,7 @@ Vue.component('order',{
       <div class="modal-container">
         <div class="modal-content">
           <button class="btn-close" @click="modalClose">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="https://www.w3.org/2000/svg">
               <path d="M2 2L14 14" stroke="#999" stroke-width="1.5" />
               <path d="M2 14L14 2" stroke="#999" stroke-width="1.5" />
             </svg>
