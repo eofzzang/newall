@@ -20,9 +20,19 @@ var app = new Vue({
       menuItem: {name:'돈까스 덮밥',orderTypeText:'포장',amount:1, price:1, optionList:[]},
       selectItem: {},
       isPopup: false,
+      data: []
     }
   },
+  mounted() {
+    fetch('./db.json')
+    .then((response) => response.json())
+    .then(res => this.data = res)
+    .catch(err => console.error(err));
+  },
   methods: {
+    test() {
+      console.log(this.data);
+    },
     changeOrderType(e) {
       this.orderType = e.idx;
       this.menuItem.orderTypeTextDescription = e.text;

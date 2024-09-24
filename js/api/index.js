@@ -1,6 +1,6 @@
 async function fetchGetMenuItems() {
-  // const response = await fetch('http://localhost:3000/menu-items');
-  const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  // const response = await fetch('https://localhost:3000/menu-items');
+  const response = await fetch('/db.json');
 
   const data = await response.json()
 
@@ -9,8 +9,8 @@ async function fetchGetMenuItems() {
 }
 
 async function fetchGetRecentOrders() {
-  // const response = await fetch('http://localhost:3000/recent-orders');
-  const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  // const response = await fetch('https://localhost:3000/recent-orders');
+  const response = await fetch('/db.json');
 
   const data = await response.json()
   
@@ -19,8 +19,8 @@ async function fetchGetRecentOrders() {
 }
 
 async function fetchGetGroupList() {
-  // const response = await fetch('http://localhost:3000/menu-groups');
-  const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  // const response = await fetch('https://localhost:3000/menu-groups');
+  const response = await fetch('/db.json');
 
   const data = await response.json()
   
@@ -29,8 +29,9 @@ async function fetchGetGroupList() {
 }
 
 async function fetchGetMenu(menuId) {
-  // const response = await fetch('http://localhost:3000/menu/?id=' + menuId);
-  const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  // const response = await fetch('https://localhost:3000/menu/?id=' + menuId);
+  // const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  const response = await fetch('/db.json');
 
   const data = await response.json()
   
@@ -39,8 +40,8 @@ async function fetchGetMenu(menuId) {
 }
 
 async function fetchGetAgreementList() {
-  // const response = await fetch('http://localhost:3000/agreement-list');
-  const response = await fetch('https://my-json-server.typicode.com/eofzzang/newall/db');
+  // const response = await fetch('https://localhost:3000/agreement-list');
+  const response = await fetch('/db.json');
 
   const data = await response.json()
   
